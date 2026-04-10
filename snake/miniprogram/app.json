@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/game/game"
+  ],
+  "window": {
+    "navigationBarTitleText": "snake for 老霍",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0b1020",
+    "navigationBarTextStyle": "white"
+  }
+}

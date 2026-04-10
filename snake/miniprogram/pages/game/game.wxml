@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="topbar">
+    <view class="title">snake for 老霍</view>
+    <view class="hud">
+      <view>Score: {{score}}</view>
+      <view>Best: {{best}}</view>
+      <view>Status: {{status}}</view>
+    </view>
+  </view>
+
+  <canvas
+    type="2d"
+    id="board"
+    class="board"
+  ></canvas>
+
+  <view class="panel">
+    <view class="actions">
+      <button class="btn" bindtap="onStart">开始 / 重开</button>
+      <button class="btn" bindtap="onPause">暂停 / 继续</button>
+    </view>
+
+    <view class="controls">
+      <view class="row">
+        <button class="dir" bindtap="onDir" data-dir="up">↑</button>
+      </view>
+      <view class="row">
+        <button class="dir" bindtap="onDir" data-dir="left">←</button>
+        <button class="dir" bindtap="onDir" data-dir="down">↓</button>
+        <button class="dir" bindtap="onDir" data-dir="right">→</button>
+      </view>
+    </view>
+
+    <view class="tips">规则：吃食物+10分并变长；撞墙/撞自己结束</view>
+  </view>
+</view>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>snake for 老霍</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <h1>snake for 老霍</h1>
+        <div class="hud">
+          <div>Score: <span id="score">0</span></div>
+          <div>Best: <span id="best">0</span></div>
+          <div>Status: <span id="status">start</span></div>
+        </div>
+      </header>
+
+      <main class="main">
+        <canvas id="board" width="500" height="500" aria-label="snake board"></canvas>
+
+        <section class="panel">
+          <div class="actions">
+            <button id="btnStart">开始 / 重开</button>
+            <button id="btnPause">暂停 / 继续</button>
+          </div>
+
+          <div class="controls">
+            <div class="row">
+              <button class="dir" data-dir="up">↑</button>
+            </div>
+            <div class="row">
+              <button class="dir" data-dir="left">←</button>
+              <button class="dir" data-dir="down">↓</button>
+              <button class="dir" data-dir="right">→</button>
+            </div>
+          </div>
+
+          <div class="tips">
+            <div>键盘：方向键 / WASD</div>
+            <div>空格：暂停/继续</div>
+            <div>规则：吃食物+10分并变长；撞墙/撞自己结束</div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <small>Docs: <code>snake/Snake-Game-PRD.md</code></small>
+      </footer>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
